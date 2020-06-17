@@ -1,5 +1,5 @@
 #banner{
-    margin-top: 50px;
+    margin-top: 150px;
     position: relative;
 }
 
@@ -18,16 +18,24 @@
 
 #banner h2{
     font-size: 28px ;
+    color: #fff;
+}
+#banner p{
+    font-size: 15px;
+    color: rgb(252, 248, 248);
+}
+span {
+    color: rgb(173, 5, 5);
 }
 
 #banner a{
     display: block;
     width: 100px;
-    color:#fff;
+    color:rgb(16, 2, 82);
     text-decoration: none;
     padding: 7px;
     margin-top: 10px;
-    border: 3px solid #fff;
+    border: 3px solid rgb(236, 12, 12);
 
 }
 
