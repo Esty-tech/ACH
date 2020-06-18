@@ -1,6 +1,7 @@
 #ver{
-    display:flexbox;
-    display: inline;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
   }
 
 #check{
