@@ -7,13 +7,12 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 8px;
 }
 header{
     display: block;
+    margin-bottom: 70px;
     height: 70px;
     width: 100%;
-    position: fixed;
     text-align: center;
     background-color: rgba(4, 4, 252, 0.966);
     color: rgba(255, 255, 255, 0.979);
@@ -29,7 +28,9 @@ header{
 
 main{
     display: block;
-    margin: 5px;
+    border: solid 3px black;
+    width: 80%;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 500px) {
@@ -109,4 +110,22 @@ nav li:hover {
   
   .dropdown:hover .dropbtn {
     background-color:  rgba(4, 4, 252, 0.288);
+  }
+
+  /*Empieza otra seccion*/
+  aside {
+    bottom: ;
+    width: 15%;
+    height: 300px;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.199);
+  }
+  aside li{
+      display: block;
+      border: red solid 3px;
+      margin-top: 10px;
+      text-align: center;
   }

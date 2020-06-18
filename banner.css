@@ -1,21 +1,28 @@
 #banner {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(47, 197, 10);
+    font-weight: bold;
   }
 .left {
     position: absolute;
     top: 8px;
-    left: 16px;
+    left: 40px;
   }
   .right {
     position: absolute;
     bottom: 8px;
-    right: 16px;
+    right: 40px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   #banner img{
-      width: 50%;
-      height: auto;
+    width: 90%;
+    height: auto;
   }
   
 
@@ -28,4 +35,11 @@
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+}
+
+footer{
+  margin-bottom: 50px;
+  right: 0;
+  width: 100%;
+  border: 1px dotted rgb(241, 37, 10);
 }
