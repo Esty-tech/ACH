@@ -50,6 +50,7 @@
           <header>
             <div class="contenedor"> 
                 <img src="images/ach.jpeg" alt="Logo de ACH"> Asociaci&oacuten Comunidad Haitiana-ACH
+                <br> <p id="fecha"></p>
   
             </div>
           </header>
@@ -99,7 +100,8 @@
 
                       <section id="titulofijo">
                         <p>"☺ Si acontece en nuestra comunidad...esta publicado aca"</p>
-                        
+                        <p id="demo"></p>
+                        <p id="saludos">Buenas Tardes</p>
                       </section>
               
                       <section id="bienvenido">
@@ -236,6 +238,22 @@
 
 </footer>
 
+<script>
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.getHours();
+</script>
+
+  <script>
+  if (new Date().getHours() < 18) {
+    document.getElementById("saludos").innerHTML = "Buen dia !";
+  }
+  </script>
+
+
+  <script>
+    var d = new Date();
+    document.getElementById("fecha").innerHTML = d;
+    </script>
 
     </body>
              
