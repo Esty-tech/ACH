@@ -116,6 +116,19 @@ section:after {
     font-size: 15px;
     color:rgb(253, 9, 9);
     background-color: rgb(183, 183, 206);
+    position: relative;
+    animation-name: asocio;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+  @keyframes asocio {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
   }
   #measocio:hover{
     padding-left: 10px;
