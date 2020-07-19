@@ -5,29 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-width: 250px;
-    list-style-type: none;
-    text-decoration: none;
-    overflow: hidden;
     }
-
-    body, #uno, #articulos, #carousel, #cuatro, #cinco, footer {
-      margin-bottom: 30px;
-    }
-
-    #articulos p {
-      text-align: center;
-    }
-
 #demo {
   display: block;
-  width: 50%;
+  width: 100%;
+  height: 20px;
   text-align: right;
-  background-color: rgba(255, 0, 0, 0.63);
-  color: yellow;
+  background-color: rgba(255, 217, 0, 0.548);
+  color: rgb(255, 0, 0);
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 70px;
+  
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -37,11 +24,24 @@ body{
     margin-right: 0px;
     background-attachment: fixed;
 }
+
+#banner{
+  margin: 10px;
+  width: 85%;
+}
+
+footer{
+  background-color: rgba(4, 4, 252, 0.356);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  clear: both;
+}
+
 /*seccion header*/
 header{
   display: block;
-  margin-bottom: 30px;
-  height: 300px;
+  height: 200px;
   width: 100%;
   text-align: center;
   background-color: rgba(4, 4, 252, 0.356);
@@ -56,84 +56,63 @@ animation-duration: 4s;}
       to {background-color: rgba(255, 0, 0, 0.856);}
     }
 
-.contenedor img{
-border: rgba(11, 12, 12, 0.884) solid 4px;
+.ach img{
+border: rgb(255, 0, 0) solid 1px;
 border-radius: 50%;
 }
-.contenedor p {
-font: oblique 22px;
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px;
+  background: rgba(216, 111, 111, 0.562);
+  padding: 20px;
 }
 
-
-  
-/*seccion boton de navegacion*/
-
-nav li:hover {
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  display: block;
+  text-align: center;
+  border: 2px solid rgba(65, 65, 63, 0.849);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+ul li:hover {
   background-color: rgba(4, 4, 252, 0.288);
-}
-nav a:hover {
   padding-left: 5px;
+  cursor: pointer;
 }
 
-  .dropbtn {
-    background-color: rgba(255, 4, 4, 0.959);
-    color: white;
-    padding: 16px;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+article {
+  float: right;
+  top: auto;
+  margin: 10px;
+  padding: 10px;
+  width: 65%;
+  background-color: rgba(219, 210, 210, 0.486);
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(245, 246, 250);
-    min-width: 160px;
-    box-shadow: 8px 8px 50px 8px  rgba(4, 4, 252, 0.288);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color:  rgba(4, 4, 252, 0.288);}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color:  rgba(4, 4, 252, 0.288);
-  }
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
-  /*Empieza seccion aside*/
-  aside {
-    display: block;
-    width:10%;
-    height: 300px;
-    float: right;
-    font-style: italic;
-    background-color: rgba(214, 39, 39, 0.521);
-  }
-  aside li{
-      display: block;
-      border: rgb(12, 12, 12) solid 1px;
-      margin-top: 5px;
-      background-color: rgba(116, 25, 25, 0.692);
-      text-align: center;
-  }
+  
+
   #measocio{
     border-radius: 40%;
+    width: 150px;
+    height: 50px;
     font-size: 15px;
     color:rgb(253, 9, 9);
     background-color: rgb(183, 183, 206);
@@ -147,7 +126,7 @@ nav a:hover {
 /*SECCION GALERIA*/
 
 div.gallery {
-  margin: 5px;
+  margin-bottom: 50px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;

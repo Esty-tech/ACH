@@ -1,22 +1,7 @@
-@media (min-width: 500p) {
-    nav li {
-        float: left;
-        padding: 5px;
-        background-color: rgba(255, 0, 0, 0.37);
-        text-decoration: none;
-        color: rgb(14, 14, 13);
-        display: inline;
-        width:auto;
-        border: 1px rgba(247, 8, 8, 0.658) solid;
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
     }
-    .dropbtn, .dropdown-content, .dropdown{
-        display: none;
-    }
-  }
-
-
-  @media (min-width: 300px){
-      nav {
-          display: none;
-      }
   }
