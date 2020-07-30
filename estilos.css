@@ -30,12 +30,19 @@ body{
   width: 85%;
 }
 
+#mapa{
+  margin-top: 20px;
+  border: rgb(255, 0, 0) solid 3px;
+  width: 30%;
+}
+
 footer{
   background-color: rgba(4, 4, 252, 0.356);
   padding: 10px;
   text-align: center;
   color: white;
   clear: both;
+  margin: 30px;
 }
 
 /*seccion header*/
